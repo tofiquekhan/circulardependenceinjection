@@ -2,10 +2,15 @@ package myproject.circularbean.beans;
 
 public class Branch {
 
-	Student student;
-	public Branch(Student student) {
+	private Student student;
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
 		this.student = student;
 	}
+
 	
 	public String getBranchName() {
 		return "Computers";

@@ -12,7 +12,7 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("/myproject/circularbean/resources/applicationContext.xml");
 		Student student = (Student) context.getBean("student");
 		Branch branch = (Branch) context.getBean("branch");
-		student.getStudentName();
-		branch.getBranchName();
+		System.out.println(student.getStudentName());
+		System.out.println(branch.getBranchName());
 	}
 }
